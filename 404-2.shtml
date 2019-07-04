@@ -1,0 +1,7 @@
+Ayyy, ingenting her.
+
+Tydeligvis eksisterer ikke siden <!--#echo var="REQUEST_URI" -->.
+
+Error-code: <!--#echo var="REDIRECT_STATUS" -->
+
+

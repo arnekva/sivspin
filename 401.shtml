@@ -1,0 +1,14 @@
+Ojsann! Her har ikke du tilgang!
+
+Følge IP-addresse er lagret: <!--#echo var="REMOTE_ADDR" -->
+(neida, ingenting blir lagret)
+
+
+ERROR-CODE: <!--#echo var="REDIRECT_STATUS" -->
+Vennligst oppgi informasjonen under til Sivspin Support hvis nødvendig.
+<!--#echo var="HTTP_HOST" -->
+<!--#echo var="REDIRECT_STATUS" -->
+<!--#echo var="REQUEST_URI" -->
+<!--#echo var="REMOTE_ADDR" -->
+<!--#echo var="HTTP_REFERER" -->
+<!--#echo var="REDIRECT_STATUS" -->

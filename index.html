@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Sivspin</title>
+
+    <meta name="Sivspin" content="Den Offisielle Sivspin">
+    <link href="Siv_Got_Style_butnotreally.css" rel="stylesheet" />
+     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 600px)" href="mainstyle.css" />
+    <link rel="stylesheet" type="text/css" href="makeItRain.css">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/HQtvabL.png" />
+    <script id="CheckForMobile" type="text/javascript">
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i);
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i);
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i);
+            },
+            any: function () {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+        if (isMobile.any()) alert('Du har blitt sendt til mobilversjonen av Sivspin. Besøk siden på en PC for å oppleve det fulle soundboardet');
+    </script>
+
+
+    <script id="counter_script_sec" type="text/javascript">
+            var sec = 0;
+        function pad ( val ) { return val > 9 ? val : "0" + val; }
+        setInterval( function(){
+            document.getElementById("counter").innerHTML=pad(++sec);
+        }, 1500);
+
+    </script>
+    <script type="text/javascript">
+        function anirain() {
+            document.getElementById('raining_money.gif').className = 'images_hidden';
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+  <div class="hardcoded_mornajens">
+    <input type="button" class="Mornjens_btn" value="MORNA JENS" onclick="document.getElementById('mornajens').play()">
+    <a href="#" class="demo"> MAKE IT RAIN
+</a>
+    <a href="#" class="demo-coins" hidden="hidden">Coins</a>
+  </div>
+
+    <div class="siv_main_content">
+
+        <div class="siv_menu">
+            <ul class="list-menu">
+                <li><input type="button" class="btn_menu" value="Trøtt Siv" onclick="document.getElementById('mainimage').src='siv_spinning_trott.gif'"></li>
+                <li><input type="button" class="btn_menu" value="Forvirret Siv" onclick="document.getElementById('mainimage').src='siv_spinning_forvirret.gif'"></li>
+                <li><input type="button" class="btn_menu" value="Forbauset Siv" onclick="document.getElementById('mainimage').src='siv_spinning_mornajens_mikrofon-photoshopped.png'"></li>
+                <li><input type="button" class="btn_menu" value="Lur Siv" onclick="document.getElementById('mainimage').src='siv_spinning_lur.gif'"></li>
+                <li><input type="button" class="btn_menu" value="Glad Siv" onclick="document.getElementById('mainimage').src='siv_spinning_happy.gif'"></li>
+            </ul>
+
+        </div>
+
+        <div class="images_hidden">
+          <div class="siv_counter_frame">
+              <p>Du har klart:</p>
+              <label id="counter">00</label>
+
+              <p>spins!</p>
+
+          </div>
+        </div>
+          <div class="soundboard" id="ikke-i-bruk" >
+            <ul class="list-menu">
+              <audio id="snikislamisering" src="media/sound/snikislamisering.mp3"></audio>
+              <audio id="ventetlengepaa" src="media/sound/detteharjegventetlengepaa.mp3"></audio>
+              <audio id="oggledameg" src="media/sound/ogjeghargledameglenge.mp3"></audio>
+              <audio id="mornajens" src="media/sound/MORNAJENS.mp3"></audio>
+              <audio id="bramedmiljoe" src="media/sound/bramedmiljoe.mp3"></audio>
+              <audio id="erdereglad" src="media/sound/erdereglad.mp3"></audio>
+              <audio id="erdetfest" src="media/sound/erdetfest.mp3"></audio>
+              <audio id="regjeringsskifte" src="media/sound/Blirdetregjeringsskifte.mp3"></audio>
+              <audio id="sterktreligiose" src="media/sound/sterktreligiose.mp3"></audio>
+              <audio id="remix" src="media/sound/mornajensSANG_edit.mp3"></audio>
+              <audio id="detteharjegventetlengepaaFULL" src="media/sound/detteharjegventetlengepaaFULL.mp3"></audio>
+                <li><p style="font-size:20px;font-family:helvetica;color:#021dd8;">Soundboard</p></li>
+                <li> <input type="button" class="btn_menu" value="Snikislamisering" onclick="document.getElementById('snikislamisering').play()"></li>
+                <li><input type="button" class="btn_menu"value="Dette har jeg venta lenge på" onclick="document.getElementById('ventetlengepaa').play()"></li>
+                <li> <input type="button" class="btn_menu" value="Gleda meg lenge" onclick="document.getElementById('oggledameg').play()"></li>
+                <li> <input type="button" class="btn_menu" value="MORNA JENS" onclick="document.getElementById('mornajens').play()"></li>
+                <li><input type="button" class="btn_menu" value="Bra med miljø" onclick="document.getElementById('bramedmiljoe').play()"></li>
+                <li><input type="button" class="btn_menu" value="Er dere glad" onclick="document.getElementById('erdereglad').play()"></li>
+                <li><input type="button" class="btn_menu" value="Er det fest?" onclick="document.getElementById('erdetfest').play()"></li>
+                <li><input type="button" class="btn_menu" value="Blir det regjeringsskifte?" onclick="document.getElementById('regjeringsskifte').play()"></li>
+                <li><input type="button" class="btn_menu" value="Sterkt religiøse" onclick="document.getElementById('sterktreligiose').play()"></li>
+                <li><input type="button" class="btn_menu" value="Full tale" onclick="document.getElementById('detteharjegventetlengepaaFULL').play()"></li>
+                <li><input type="button" class="btn_menu" value="Remix" onclick="document.getElementById('remix').play()"></li>
+            </ul>
+        </div>
+
+            <div class="siv_main_head">
+                <img id="background-body" src="siv-jensen_overkropp-cropped.gif" />
+                <img class="siv_head_img" id="mainimage" src="siv_spinning_happy.gif" />
+
+            </div>
+
+        </div>
+
+        <div class="siv_PUSH_ME_TO_MAKE_IT_RAIN_BOIII" id="ikke-i-bruk" hidden="hidden"></div>
+    <div class="siv_segway_frame" id="ikke-i-bruk" hidden="hidden"></div>
+
+        <div class="footer">
+
+        </div>
+
+     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="makeItRain.js" > </script>
+        <script src="script.js"></script>
+</body>
+</html>
